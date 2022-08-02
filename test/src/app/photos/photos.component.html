@@ -1,0 +1,6 @@
+<div *ngIf="isLoaded" class="main_phot_block">
+    <h2>More photos =)</h2>
+    <div class="photosByBreed">
+        <div *ngFor="let n of arrayOfPhoto"><img [src]="n.url"></div>
+    </div>
+</div>

@@ -1,0 +1,19 @@
+.header{
+    background-color: #e794c2;
+}
+.header mat-toolbar{
+    background-color: #e794c2;
+}
+h1{
+    width: 100%;
+    text-align: center;
+    padding-top: 0.2em;
+    padding-bottom: 0.5em;
+    font-size:2em;
+    transform: skewY(-4deg);
+    color:white;
+    text-shadow:
+    #dfc1d2 0.05em 0.05em,
+    #e794c2 0.1em 0.1em,
+    #e85ac5 0.15em 0.15em;
+}

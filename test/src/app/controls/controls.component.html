@@ -1,0 +1,17 @@
+<div class="controls">
+    <mat-form-field appearance="fill" class="select_field">
+        <mat-label>Select a breed</mat-label>
+        <mat-select [(value)]="selected" (selectionChange)="changeBreed($event)">
+            <mat-option value="All">All</mat-option>
+            <mat-option *ngFor="let n of breed" value={{n.id}}>{{n.name}}</mat-option>
+        </mat-select>
+    </mat-form-field>
+    <mat-form-field appearance="fill" class="select_field">
+        <mat-label >Select a count of photo</mat-label>
+        <mat-select [(value)]="size" (selectionChange)="changeLimit($event)">
+            <mat-option value="10">10</mat-option>
+            <mat-option value="15">15</mat-option>
+            <mat-option value="20">20</mat-option>
+        </mat-select>
+    </mat-form-field>
+</div>
